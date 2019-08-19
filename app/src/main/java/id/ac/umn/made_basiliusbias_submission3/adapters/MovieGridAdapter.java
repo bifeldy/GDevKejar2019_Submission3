@@ -63,7 +63,7 @@ public class MovieGridAdapter extends RecyclerView.Adapter<MovieGridAdapter.Movi
         LayoutInflater inflater = LayoutInflater.from(this.recyclerContext);
         View view = inflater.inflate(rowLayout, viewGroup, false);
 
-        return new MovieGridAdapter.MovieGridViewHolder(view);
+        return new MovieGridViewHolder(view);
     }
 
     @Override
@@ -105,7 +105,7 @@ public class MovieGridAdapter extends RecyclerView.Adapter<MovieGridAdapter.Movi
     public int getItemCount() { return (movies != null) ? movies.size() : 0; }
 
     // Inner Class
-    class MovieGridViewHolder extends RecyclerView.ViewHolder {
+    static class MovieGridViewHolder extends RecyclerView.ViewHolder {
 
         // UI Object
         private ImageView movies_image;

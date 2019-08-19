@@ -5,7 +5,6 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import id.ac.umn.made_basiliusbias_submission3.LangApp;
 import id.ac.umn.made_basiliusbias_submission3.R;
 import id.ac.umn.made_basiliusbias_submission3.Utility;
 import id.ac.umn.made_basiliusbias_submission3.models.DetailMovieViewModel;
@@ -29,7 +29,7 @@ import java.util.Locale;
 import java.util.Objects;
 
 @SuppressWarnings("Duplicates")
-public class DetailActivity extends AppCompatActivity {
+public class DetailActivity extends LangApp {
 
     // Data Passed
     private String activity_title;
@@ -37,12 +37,7 @@ public class DetailActivity extends AppCompatActivity {
     private String data_type;
     private String tmdb_url;
 
-    // Loading UI
-    private ImageView loading_image;
-    private TextView loading_text;
-
     // Detail Content UI
-    private LinearLayout detail_content;
     private LinearLayout air_date;
 
     // Header UI
@@ -85,7 +80,8 @@ public class DetailActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) getSupportActionBar().setTitle(activity_title + data_id);
 
         // Show Loading Animation
-        loading_image = findViewById(R.id.loading_image);
+        // Loading UI
+        ImageView loading_image = findViewById(R.id.loading_image);
         loading_image.setVisibility(View.VISIBLE);
         Glide.with(this)
                 .load(getResources().getString(R.string.animated_loading_data))
@@ -93,12 +89,13 @@ public class DetailActivity extends AppCompatActivity {
                 .override(256, 256)
                 .into(loading_image)
         ;
-        loading_text = findViewById(R.id.loading_text);
+        TextView loading_text = findViewById(R.id.loading_text);
         loading_text.setVisibility(View.VISIBLE);
+        loading_text.setText(R.string.loading_text);
         loading_text.setTextColor(Color.GREEN);
 
         // Find Detail Content
-        detail_content = findViewById(R.id.detail_content);
+        LinearLayout detail_content = findViewById(R.id.detail_content);
         detail_content.setVisibility(View.GONE);
 
         // Find Air Date

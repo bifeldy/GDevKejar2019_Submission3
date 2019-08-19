@@ -40,7 +40,7 @@
 
                 TODO :: TL;DR
                         -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-                        Nih `ConstraintLayout`
+                        Nih `ConstraintLayout` Dimulai Dari Sini
 
             -->
 
@@ -92,101 +92,86 @@
                     android:background="@color/colorPrimaryDark"
                     app:layout_constraintTop_toBottomOf="@id/text_view_information" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/original_name"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:paddingTop="8dp"
-                    android:orientation="vertical"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_information">
+                    android:text="@string/original_name"
+                    android:textColor="#ff808080"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_information" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/detail_original_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/original_name"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/original_name"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_information" />
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="8dp"
-                            android:text="@string/original_name"
-                            android:textColor="#ff808080"
-                            android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/popularity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/popularity"
+                    android:textColor="#ff808080"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_original_name" />
 
-                        <TextView
-                            android:id="@+id/detail_original_name"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="6"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="8dp"
-                            android:text="@string/original_name"
-                            android:textColor="@android:color/black"
-                            android:textAlignment="textEnd"
-                            android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/detail_popularity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/popularity"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/popularity"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_original_name" />
 
-                    </LinearLayout>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/genres"
+                    android:textColor="#ff808080"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_popularity" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="8dp"
-                            android:text="@string/popularity"
-                            android:textColor="#ff808080"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/detail_popularity"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="6"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="8dp"
-                            android:text="@string/popularity"
-                            android:textColor="@android:color/black"
-                            android:textAlignment="textEnd"
-                            android:textSize="14sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="4"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="8dp"
-                            android:text="@string/genres"
-                            android:textColor="#ff808080"
-                            android:textSize="14sp" />
-
-                        <TextView
-                            android:id="@+id/detail_genres"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="6"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="8dp"
-                            android:text="@string/genres"
-                            android:textColor="@android:color/black"
-                            android:textAlignment="textEnd"
-                            android:textSize="14sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/detail_genres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/genres"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_popularity" />
 
             </android.support.constraint.ConstraintLayout>
 

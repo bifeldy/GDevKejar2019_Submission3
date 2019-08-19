@@ -46,11 +46,11 @@ public class SettingsActivity extends LangApp {
 
     private void reLaunchMainActivity() {
 
+        Toast.makeText(this, getResources().getString(R.string.settings_saved), Toast.LENGTH_SHORT).show();
+
         // Back To Parent Activity
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
-
-        Toast.makeText(this, getResources().getString(R.string.settings_saved), Toast.LENGTH_SHORT).show();
     }
 }

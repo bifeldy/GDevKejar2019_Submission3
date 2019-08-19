@@ -21,14 +21,14 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingLeft="@dimen/fragment_padding"
-            android:paddingTop="@dimen/fragment_padding"
+            android:paddingTop="16dp"
             android:paddingRight="@dimen/fragment_padding">
 
             <Spinner
                 android:id="@+id/filter_type"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
+                android:layout_weight="2"
                 android:backgroundTint="@android:color/darker_gray"
                 android:entries="@array/filter_type" />
 
@@ -36,7 +36,7 @@
                 android:id="@+id/filter_year"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:backgroundTint="@android:color/darker_gray"
                 android:entries="@array/filter_year" />
 
@@ -54,7 +54,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:layout_weight="2"
+                android:layout_weight="3"
                 android:hint="@string/search_text"
                 android:inputType="text"
                 android:maxLines="1"
@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:drawableStart="@drawable/ic_search"
                 android:text="@string/search_button"
                 android:textColor="@android:color/white"

@@ -108,7 +108,7 @@ public class TvListAdapter extends RecyclerView.Adapter<TvListAdapter.TvListView
     public int getItemCount() { return (tvs != null) ? tvs.size() : 0; }
 
     // Inner Class
-    class TvListViewHolder extends RecyclerView.ViewHolder {
+    static class TvListViewHolder extends RecyclerView.ViewHolder {
 
         // UI Object
         private ImageView tv_show_image;
