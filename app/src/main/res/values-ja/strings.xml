@@ -58,4 +58,5 @@
     <string name="genres">ジャンル</string>
     <string name="episodes">エピソード</string>
     <string name="votes">投票</string>
+    <string name="title_activity_detail">詳細情報</string>
 </resources>

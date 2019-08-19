@@ -58,4 +58,5 @@
     <string name="genres">Aliran</string>
     <string name="episodes">Episodes</string>
     <string name="votes">Voting</string>
+    <string name="title_activity_detail">Informasi Detil</string>
 </resources>

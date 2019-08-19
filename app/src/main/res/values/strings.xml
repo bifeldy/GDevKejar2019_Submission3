@@ -17,6 +17,7 @@
 
     <!-- Activity Window & Fragment TitleBar -->
     <string name="title_activity_main">Main Application</string>
+    <string name="title_activity_detail">Detail Information</string>
     <string name="title_activity_detail_movie">Detail Movie Information</string>
     <string name="title_activity_detail_tv">Detail TV Information</string>
     <string name="title_activity_settings">Application Settings</string>
