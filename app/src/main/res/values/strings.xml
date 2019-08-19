@@ -138,5 +138,7 @@
     <string name="movie">Movie</string>
     <string name="tv">TV</string>
     <string name="choose_one">Choose One!</string>
+    <string name="episodes">Episodes</string>
+    <string name="votes">Votes</string>
 
 </resources>

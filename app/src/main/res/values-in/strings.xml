@@ -56,4 +56,6 @@
     <string name="original_name">Nama Asli</string>
     <string name="popularity">Popularitas</string>
     <string name="genres">Aliran</string>
+    <string name="episodes">Episodes</string>
+    <string name="votes">Voting</string>
 </resources>

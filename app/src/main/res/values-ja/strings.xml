@@ -56,4 +56,6 @@
     <string name="original_name">元の名前</string>
     <string name="popularity">人気</string>
     <string name="genres">ジャンル</string>
+    <string name="episodes">エピソード</string>
+    <string name="votes">投票</string>
 </resources>

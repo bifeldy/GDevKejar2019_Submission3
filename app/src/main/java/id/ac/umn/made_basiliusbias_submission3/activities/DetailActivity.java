@@ -137,13 +137,13 @@ public class DetailActivity extends LangApp {
                     ;
 
                     // Hard-Coded
-                    detail_number_of_episodes.setText("1 Episodes");
+                    detail_number_of_episodes.setText("1 " + getResources().getString(R.string.episodes));
                     air_date.setVisibility(View.GONE);
                     detail_type.setText(getResources().getString(R.string.movie));
 
                     // Number
                     detail_score.setText(Double.toString(movie.getVote_average()));
-                    detail_vote_count.setText(movie.getVote_count() + " Votes");
+                    detail_vote_count.setText(movie.getVote_count() + " " + getResources().getString(R.string.votes));
                     detail_popularity.setText(Double.toString(movie.getPopularity()));
 
                     // String
@@ -208,9 +208,9 @@ public class DetailActivity extends LangApp {
 
                     // Number
                     detail_score.setText(Double.toString(tv.getVote_average()));
-                    detail_vote_count.setText(tv.getVote_count() + " Votes");
+                    detail_vote_count.setText(tv.getVote_count() + " " + getResources().getString(R.string.votes));
                     detail_popularity.setText(Double.toString(tv.getPopularity()));
-                    detail_number_of_episodes.setText(tv.getNumber_of_episodes() + " Episodes");
+                    detail_number_of_episodes.setText(tv.getNumber_of_episodes() + " " + getResources().getString(R.string.episodes));
 
                     // String
                     if(!tv.getName().equalsIgnoreCase("")) detail_title.setText(tv.getName());
